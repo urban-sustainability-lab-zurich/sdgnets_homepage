@@ -1,3 +1,8 @@
 node_modules/*
 public/js/*
 .shadow-cljs/*
+.lsp
+.clj-kondo
+public/css/
+template/  
+  

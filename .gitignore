@@ -3,6 +3,5 @@ public/js/*
 .shadow-cljs/*
 .lsp
 .clj-kondo
-public/css/
 template/  
   

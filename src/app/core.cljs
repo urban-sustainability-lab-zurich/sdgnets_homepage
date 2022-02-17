@@ -11,3 +11,6 @@
 (defn ^:export main
   []
   (start))
+
+
+(comment (start))

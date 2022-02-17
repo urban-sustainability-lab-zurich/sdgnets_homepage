@@ -12,9 +12,9 @@ code .
 
 ## Repo structure
 
-/public: images etc.
-/src/app/views: high-level file calling components and arranges it
-/src/app/components:
+- /public: images etc.
+- /src/app/views: high-level file calling components and arranges it
+- /src/app/components:
 
 
 ## Adding content

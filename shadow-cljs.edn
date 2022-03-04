@@ -18,4 +18,6 @@
 
         :devtools
         {:http-root   "public"
-         :http-port   8080}}}}
+         :http-port   8080}
+
+        :release {:output-dir "docs/js"}}}}

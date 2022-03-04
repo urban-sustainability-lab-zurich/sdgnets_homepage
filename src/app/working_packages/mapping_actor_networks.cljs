@@ -30,8 +30,8 @@
        involved in urban sustainability transformations in Zurich. We focus on
        three leading empirical questions in P1."
        [:ul.list-inside.list-disc.py-2
-        [:li "RQ1.1: Which actors impact which SDGs in Zurich? Who participates in
-       which projects? "]
+        [:li "RQ1.1: Which actors impact which SDGs in Zurich? Who participates
+       in which projects? "]
         [:li "RQ1.2: Which actors are central in SDG implementation?
        Which are peripheral?"]
         [:li "RQ1.3: What positions do actors take in

@@ -1,6 +1,6 @@
 (ns app.views
   (:require
-   [app.components :refer (button title below-hero content team news)]
+   [app.components :refer (button title below-hero below-title content team news)]
    [app.state :refer (app-state)]
    [app.working-packages.mapping-actor-networks :refer (wp-1)]
    [app.working-packages.studying-sdg-interactions :refer (wp-2)]
@@ -96,17 +96,20 @@
      monitoring of actor activity."
       :title "Mapping actor networks"
       :icon-url "img/networking.png"
-      :on-click (fn [] (swap! app-state assoc :view "Mapping actor networks"))}]
+      :on-click (fn [] (swap! app-state assoc :view "Mapping actor networks"))
+      :scale-down? true}]
     [content
      {:description "We use gamification to study SDG
      interactions contextualized in Zürich."
       :title "Studying SDG interactions"
       :icon-url "img/sustainable.png"
+      :scale-down? true
       :on-click (fn [] (swap! app-state assoc :view "Studying SDG interactions"))}]
     [content {:description "We co-design targeted network interventions with
      stakeholders to close governance gaps in real-world experiment."
               :title "Closing governance gaps"
               :icon-url "img/circle.png"
+              :scale-down? true
               :on-click (fn [] (swap! app-state assoc :view "Closing governance gaps"))}]]])
 
 (defn body []

@@ -85,7 +85,7 @@ discourses."
               :title "Dr. Mario Angst"
               :icon-url "img/mario.jpg"
               :rounded? true}]
-    [content {:description "Myriam Pham is a PhD student at the
+    [content {:description "Myriam Pham-Truffert is a PhD student at the
 Digital Society Initiative and the Department of Geography of the University of
 Zurich. Her PhD thesis is about the use of gamification and participatory
 modeling to gather data on contextualized, local-level interactions between

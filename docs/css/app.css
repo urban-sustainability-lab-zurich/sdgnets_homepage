@@ -1,3 +1,7 @@
 .gradient {
     background: linear-gradient(90deg, #e9ceaf 0%, #81b9d3 100%);
 }
+
+.body {
+    white-space: pre-line;
+}

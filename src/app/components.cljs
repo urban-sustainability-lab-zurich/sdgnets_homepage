@@ -45,7 +45,9 @@
    [:div.max-w-7xl
     [:img {:class "mx-auto w-1/2 sm:w-1/2 md:w-1/4 z-20", :src icon-url}]
     [:h3 {:class "text-center text-3xl text-gray-800 font-bold leading-none my-3"} title]
-    [:p {:class "w-full p-6 text-justify md:columns-2 lg:columns-3 lg:gap-10"} description-wp]
+    [:div
+     [:p {:class "w-full p-6 text-justify md:columns-2 lg:columns-3 lg:gap-10"} description-wp]
+    ]
     [:h2 {:class "text-3xl text-gray-500 px-6"} "Timeline"]
     [:p {:class "w-full p-6"} description-timeline]]])
 

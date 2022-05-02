@@ -6,7 +6,7 @@ In WSL2 launch visual studio from repository
 
 from mnt/c/
 ```
-cd Github/sdg_nets/
+cd Github/sdgnets_homepage/
 code .
 ```
 

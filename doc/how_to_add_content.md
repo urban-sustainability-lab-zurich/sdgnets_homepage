@@ -9,6 +9,8 @@ from mnt/c/
 cd Github/sdgnets_homepage/
 code .
 ```
+Go to src/core.cljs and Jack-in https://calva.io/connect/ using Ctrl-shift-P "Start a Project REPL and Connect".
+Use shadow-cljs and build :app
 
 ## Repo structure
 

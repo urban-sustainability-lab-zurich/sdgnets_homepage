@@ -111,13 +111,17 @@ Sustainable Development Goals (SDGs)."
 
 (defn news []
   [:div.bg-white.pt-10
-   [:div.flex.items-start.justify-around
-    [content {:description "Launch of DSI Community Sustainability!" :title "February 2022" :icon-url "img/pikachu.png"}]
-    [content {:description "Confirmed home office but we are till on it - only virtually!" :title "January 2021" :icon-url "img/pikachu.png"}]
-    [content {:description "Some news" :title "Date" :icon-url "img/pikachu.png"}]
-    [content {:description "Some news" :title "Date" :icon-url "img/pikachu.png"}]]
-   [:div.flex.items-start.justify-around
-    [content {:description "Do you like SDGnets' logo?" :title "November 2021" :icon-url "img/SDGnets_logo.png"}]
-    [content {:description "Some news" :title "October 2021" :icon-url "img/pikachu.png"}]
-    [content {:description "Myriam (SDGnets' PhD) has found a home research group in the Earth System Science (ESS) group!" :title "September 2021" :icon-url "img/dsi-office.jfif"}]
-    [content {:description "Mario (SDGnets' PI) has settled at the Digital Society Initiative (DSI)!" :title "August 2021" :icon-url "img/einstein-office.jfif"}]]])
+   [content {:description "Official launch of DSI Community Sustainability. We
+    look forward to contributing to the DSI Communities with regards to
+    sustainability and gamification!"
+             :title "February 2022"
+             :icon-url "img/pikachu.png"}]
+   [content {:description "We are now associated with the Earth System
+    Science (ESS) group in the Department of Geography, which is led by
+    Prof. Maria J. Santos."
+             :title "September 2021"
+             :icon-url "img/pikachu.png"}]
+   [content {:description "The work for SDGnets@ZH has formally started at the
+   Digital Society Initiative (DSI)!"
+             :title "August 2021"
+             :icon-url "img/pikachu.png"}]])

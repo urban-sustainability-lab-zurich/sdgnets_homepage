@@ -84,30 +84,46 @@
   )
 
 (defn team []
-  [:div.bg-white.pt-10
-   [:div.flex.items-start.justify-around
-    [content {:description "Dr. Mario Angst is a postdoc at
+[:div.bg-white.pt-10
+ [:div.flex.items-start.justify-around
+  [content {:description
+            [:p "Dr. Mario Angst is a postdoc at
 the Digital Society Initiative of the University of Zurich. His research
 focuses on the interplay between digitalization and sustainability
 transformations, governance networks and policy-making in the Anthropocene. He
 is currently focusing on the use of machine learning and natural language
 processing algorithms to map sustainability governance networks and
 discourses."
-              :title "Dr. Mario Angst"
-              :icon-url "img/mario.jpg"
-              :rounded? true}]
-    [content {:description "Myriam Pham-Truffert is a PhD student at the
+             [:br]
+             [:br]
+             [:a {:href "https://marioangst.com/"}
+              [:img {:border "0", :src "img/website.png", :alt "marioangst.com", :width "60", :height "60"}]]
+             [:a {:href "https://twitter.com/mario_angst_sci"}
+              [:img {:border "0", :src "img/twitter.png", :alt "mario_angst_sci", :width "60", :height "60"}]]
+             [:a {:href "mailto:mario.angst@Uzi.ch"}
+              [:img {:border "0", :src "img/email.png", :alt "Send an email", :width "60", :height "60"}]]]
+            :title "Dr. Mario Angst"
+            :icon-url "img/mario.jpg"
+            :rounded? true}]
+  [content {:description
+            [:p "Myriam Pham-Truffert is a PhD student at the
 Digital Society Initiative and the Department of Geography of the University of
 Zurich. Her PhD thesis is about the use of gamification and participatory
 modeling to gather data on contextualized, local-level interactions between
 Sustainable Development Goals (SDGs)."
-              :title "Myriam Pham-Truffert"
-              :icon-url "img/myriam.jpg"
-              :rounded? true}]
-    [content {:description "A Research Assistant will soon join our team!"
-              :title "Young Padawan"
-              :rounded? true
-              :icon-url "img/yoda.jpg"}]]])
+             [:br]
+             [:br]
+             [:a {:href "https://twitter.com/myriam_pham"}
+              [:img {:border "0", :src "img/twitter.png", :alt "myriam_pham", :width "60", :height "60"}]]
+             [:a {:href "mailto:myriam.pham-truffert@uzh.ch"}
+              [:img {:border "0", :src "img/email.png", :alt "Send an email", :width "60", :height "60"}]]]
+            :title "Myriam Pham-Truffert"
+            :icon-url "img/myriam.jpg"
+            :rounded? true}]
+  [content {:description "A Research Assistant will soon join our team!"
+            :title "Young Padawan"
+            :rounded? true
+            :icon-url "img/yoda.jpg"}]]])
 
 (defn news []
   [:div.bg-white.pt-10

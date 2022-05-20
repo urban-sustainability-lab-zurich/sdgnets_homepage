@@ -100,7 +100,7 @@ discourses."
               [:img {:border "0", :src "img/website.png", :alt "marioangst.com", :width "60", :height "60"}]]
              [:a {:href "https://twitter.com/mario_angst_sci"}
               [:img {:border "0", :src "img/twitter.png", :alt "mario_angst_sci", :width "60", :height "60"}]]
-             [:a {:href "mailto:mario.angst@Uzi.ch"}
+             [:a {:href "mailto:mario.angst@uzh.ch"}
               [:img {:border "0", :src "img/email.png", :alt "Send an email", :width "60", :height "60"}]]]
             :title "Dr. Mario Angst"
             :icon-url "img/mario.jpg"

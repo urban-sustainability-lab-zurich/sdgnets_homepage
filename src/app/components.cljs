@@ -1,27 +1,18 @@
-(ns app.views
-  (:require
-   [app.components :refer (button title below-hero below-title content team news)]
-   [app.state :refer (app-state)]
-   [app.working-packages.mapping-actor-networks :refer (wp-1)]
-   [app.working-packages.studying-sdg-interactions :refer (wp-2)]
-   [app.working-packages.closing-governance-gaps :refer (wp-3)]))
+(ns app.components)
 
-(defn nav-button [{:keys [title]}]
-  [:div.z-50
-   [button {:title title
-            :on-click (fn [] (swap! app-state assoc :view title))}]])
+;; reusable functionn
+(defn button [{:keys [title on-click]}]
+  [:button
+   {:class "mx-5 hover:underline bg-white text-gray-800 font-bold rounded-full my-1 py-1 px-6 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+    :on-click (or on-click (constantly 0))}
+   [:h {:class "text-gray-800 mb-8"} title]])
 
-(defn navbar []
-  [:div {:class "flex justify-between my-8 w-full px-4 z-50 mb-4"} ;; alternative :div.flex :div#id <=> :div {:id "id"}
-   [:div {:class "flex"}
-    [nav-button {:title "Home"}]
-    [nav-button {:title "Team"}]
-    [nav-button {:title "News"}]]])
-
-
-(defn tasks_2
+(defn title
   []
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
   [:div {:class "container pt-10 px-3 mx-auto flex flex-wrap flex-col md:flex-row items-strech gap-5"}
    [:div {:class "flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"}
     [:p {:class "uppercase tracking-loose w-full"} "Digitalization and urban sustainability transformations in Zurich"]
@@ -114,8 +105,12 @@
     [:h2 {:class "font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"} "STEP 2"]
     [:p {:class "leading-relaxed"} "Lorem ipsum"]]])
 
+<<<<<<< HEAD
 (defn step-content []
   )
+=======
+(defn step-content [])
+>>>>>>> main
 
 (defn team []
 [:div.bg-white.pt-10
@@ -134,7 +129,11 @@ discourses."
               [:img {:border "0", :src "img/website.png", :alt "marioangst.com", :width "60", :height "60"}]]
              [:a {:href "https://twitter.com/mario_angst_sci"}
               [:img {:border "0", :src "img/twitter.png", :alt "mario_angst_sci", :width "60", :height "60"}]]
+<<<<<<< HEAD
              [:a {:href "mailto:mario.angst@uzh.ch"}
+=======
+             [:a {:href "mailto:mario.angst@Uzi.ch"}
+>>>>>>> main
               [:img {:border "0", :src "img/email.png", :alt "Send an email", :width "60", :height "60"}]]]
             :title "Dr. Mario Angst"
             :icon-url "img/mario.jpg"
@@ -168,6 +167,7 @@ Sustainable Development Goals (SDGs)."
             :icon-url "img/yoda.jpg"}]]])
 
 (defn news []
+<<<<<<< HEAD
 =======
   [:section {:class "bg-white text-gray-600 body-font"}
    [:div {:class "container px-5 py-24 mx-auto flex flex-wrap"}
@@ -290,66 +290,20 @@ Sustainable Development Goals (SDGs)."
 
 (defn home []
 >>>>>>> main
+=======
+>>>>>>> main
   [:div.bg-white.pt-10
-   [:div.flex.items-start.justify-around
-    [content
-     {:description "We use tools and new data sources arising from
-     digitalization to build a continuously updated and comprehensive
-     monitoring of actor activity."
-      :title "Mapping actor networks"
-      :icon-url "img/networking.png"
-      :on-click (fn [] (swap! app-state assoc :view "Mapping actor networks"))
-      :scale-down? true}]
-    [content
-     {:description "We use gamification to study SDG
-     interactions contextualized in Zürich."
-      :title "Studying SDG interactions"
-      :icon-url "img/sustainable.png"
-      :scale-down? true
-      :on-click (fn [] (swap! app-state assoc :view "Studying SDG interactions"))}]
-    [content {:description "We co-design targeted network interventions with
-     stakeholders to close governance gaps in real-world experiment."
-              :title "Closing governance gaps"
-              :icon-url "img/circle.png"
-              :scale-down? true
-              :on-click (fn [] (swap! app-state assoc :view "Closing governance gaps"))}]]])
-
-(defn body []
-  (let [v (:view @app-state)]
-    (cond
-      (= v "Home") [home]
-      (= v "Team") [team]
-      (= v "News") [news]
-      :else [home])))
-
-
-
-(defn app []
-  (let [v (:view @app-state)]
-    [:<>
-     (cond
-       (#{"Home" "Team" "News"} v)
-       [:div.gradient.overflow-x-hidden
-        [navbar]
-        [title]
-        [below-hero]
-        [body]]
-
-       (#{"Mapping actor networks"} v)
-       [:div.gradient.overflow-x-hidden
-        [navbar]
-        [below-hero]
-        [wp-1]
-        [task]]
-
-       (#{"Studying SDG interactions"} v)
-       [:div.gradient.overflow-x-hidden
-        [navbar]
-        [below-hero]
-        [wp-2]]
-
-       (#{"Closing governance gaps" "DE"} v)
-       [:div.gradient.overflow-x-hidden
-        [navbar]
-        [below-hero]
-        [wp-3]])]))
+   [content {:description "Official launch of DSI Community Sustainability. We
+    look forward to contributing to the DSI Communities with regards to
+    sustainability and gamification!"
+             :title "February 2022"
+             :icon-url "img/pikachu.png"}]
+   [content {:description "We are now associated with the Earth System
+    Science (ESS) group in the Department of Geography, which is led by
+    Prof. Maria J. Santos."
+             :title "September 2021"
+             :icon-url "img/pikachu.png"}]
+   [content {:description "The work for SDGnets@ZH has formally started at the
+   Digital Society Initiative (DSI)!"
+             :title "August 2021"
+             :icon-url "img/pikachu.png"}]])

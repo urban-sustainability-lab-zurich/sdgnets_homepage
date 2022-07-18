@@ -8,8 +8,7 @@
    [:div.w-full
     [work-package
      {:description-wp
-      [:p
-       "Complementary to "
+      [:p "Complementary to "
        [:span.text-blue-400
         {:class ["hover:underline" "cursor-pointer"]
          :on-click (fn [] (swap! app-state assoc :view "Mapping actor networks"))}
@@ -23,9 +22,10 @@
      another SDG (or target)."
        [:br]
        [:br]
-       "We use gamification to study mental models of SDG interactions held by
-     actors in Zürich in a sub-project led by Myriam Pham-Truffert called
-     SD-Game."
+       "We use gamification to study mental
+     models of SDG interactions held by actors in Zürich in a sub-project led by"
+       [:a {:href "/team"} " Myriam Pham-Truffert "]
+       "called SD-Game."
        [:br]
        [:br]
        "SD-Game will investigate local knowledge which is relevant to the
@@ -37,7 +37,7 @@
       progress on (an)other target(s)."
        [:br]
        [:br]
-       "After exploring the questions of definition and contextualization of
+      "After exploring the questions of definition and contextualization of
       so-called “SDG interactions”, the project will test different degrees of
       gamification in participatory systems modeling interventions, using
       notably an existing modeling tool, as well as a game which will be

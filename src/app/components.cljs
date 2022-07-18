@@ -52,7 +52,7 @@
     [:p {:class "w-full p-6"} description-timeline]]])
 
 
-(defn content [{:keys [description title icon-url rounded? on-click contain? cover? scale-down?]}]
+(defn content-2 [{:keys [description title icon-url rounded? on-click contain? cover? scale-down?]}]
   [:div {:class ["flex" "flex-wrap" "w-1/3" "p-10"]}
    [:div
     [:div {:class ["flex" "justify-center" "w-full"]}
@@ -68,6 +68,27 @@
                         (when on-click "cursor-pointer hover:underline"))}
       title]]
     [:p {:class "text-justify text-gray-600 mb-8"} description]]])
+
+
+(defn content [{:keys [description title icon-url rounded? on-click contain? cover? scale-down?]}]
+  [:div {:class ["flex" "flex-wrap" "w-1/3" "p-10"]}
+   [:div
+    [:div {:class ["flex" "justify-center" "w-full"]}
+     [:img {:on-click (or on-click identity)
+            :class (conj ["center" "z-50" "aspect-square object-cover" "h-60"]
+                         (when rounded? "rounded-full")
+                         (when contain? "object-contain")
+                         (when cover? "object-cover")
+                         (when scale-down? "object-scale-down")
+                         (when on-click "cursor-pointer hover:underline")),
+            :src icon-url}]]
+    [:div {:class ["flex" "justify-center" "w-full"]}
+     [:h3 {:on-click (or on-click identity)
+           :class (conj ["text-3xl text-gray-800 font-bold leading-none my-3"]
+                        (when on-click "cursor-pointer hover:underline"))}
+      title]]
+    [:p {:class "text-justify text-gray-600 mb-8"} description]]])
+
 
 (defn step-bullet []
   [:div {:class "flex relative pb-12"}
@@ -120,8 +141,16 @@ Sustainable Development Goals (SDGs)."
             :title "Myriam Pham-Truffert"
             :icon-url "img/myriam.jpg"
             :rounded? true}]
-  [content {:description "A Research Assistant will soon join our team!"
-            :title "Young Padawan"
+  [content {:description "Viviane Walker is a research assistant at the Digital
+  Society Initiative and a student in communications and computational
+  linguistics at the University of Zurich."
+            :title "Viviane Walker"
+            :rounded? true
+            :icon-url "img/yoda.jpg"}]
+  [content {:description "Neitah Noemi Müller is a research assistant at the
+  Digital Society Initiative and a Master's student in religion, economy and
+  politics at the University of Zurich."
+            :title "Neitah Noemi Müller"
             :rounded? true
             :icon-url "img/yoda.jpg"}]]])
 

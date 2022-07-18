@@ -151,9 +151,8 @@
       :icon-url "img/networking.png"
       :on-click (fn [] (swap! app-state assoc :view "Mapping actor networks"))
       :scale-down? true}]
-    [content
-     {:description "We use gamification to study SDG
-     interactions contextualized in Zürich."
+    [content {:description "We use gamification to study SDG interactions
+     contextualized in Zürich."
       :title "Studying SDG interactions"
       :icon-url "img/sustainable.png"
       :scale-down? true

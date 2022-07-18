@@ -101,8 +101,7 @@
     [:h2 {:class "font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"} "STEP 2"]
     [:p {:class "leading-relaxed"} "Lorem ipsum"]]])
 
-(defn step-content []
-  )
+(defn step-content [])
 
 (defn team []
 [:div.bg-white.pt-10
